@@ -64,6 +64,51 @@ body{
 
 
 
+
+/* New grid box */
+.section {
+    background-color: rgb(218, 253, 254);
+    color: rgb(14, 14, 14);
+    border-radius: 5px;
+    padding: 20px;
+    border-collapse: collapse;
+  }
+
+/* ingredients styling */
+  ingred {
+    grid-column: col / span 2;
+    grid-row: row ;
+    
+  }
+  ingred h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  ingred ul{
+    list-style-type:none;
+  }
+  /* classes for ingredients */
+  .meat{
+    background-color:rgba(255, 94, 94, 0.3);
+  }
+  .vegetable{
+    background-color:rgba(72, 255, 72, 0.3);
+  }
+  .dairy{
+    background-color:rgba(255, 255, 0, 0.3);
+  }
+
+/* instructions styling */
+  instruc {
+    grid-column: col 3 / span 2 ;
+    grid-row: row ;
+    font-style: italic;
+  }
+  instruc h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+
+
 .banner{
     display: block;
     margin-left: auto;
@@ -71,16 +116,8 @@ body{
     max-width: 45%;
     height: auto;
 }
-
+/* image stylings for lab 1 */
 .image1{
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
-    height: auto;
-}
-
-.image2{
   display: block;
     margin-left: auto;
     margin-right: auto;
