@@ -1,0 +1,84 @@
+body{
+  margin: 0px;
+  background-color: rgb(158, 158, 158)
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, [col] 25% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: rgb(158, 158, 158);
+    color: rgb(107, 93, 119);
+    width: 100%;
+  }
+
+  .box {
+    background-color: rgb(78, 71, 94);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    border-collapse: collapse;
+  }
+
+
+  header {
+    grid-column: col 1 / span 5 ;
+    grid-row: row ;
+    font-family: impact;
+  }
+
+
+  nav {
+    grid-column: col 1 / span 5 ;
+    grid-row: row 2 ;
+  }
+
+  /*navigation list style*/
+  nav a:link{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  nav ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+  }
+
+  nav li {
+   float: left;
+  }
+
+
+
+  section {
+    grid-column: col 1 / span 2 ;
+    grid-row: row 3 ;
+    font-family: sans-serif;
+  }
+
+  article{
+    grid-column: col 1 / span 2;
+    grid-row: row 4 ;
+  }
+
+  aside{
+    grid-column: col 3 / span 2;
+    grid-row: row 3 / span 3;
+  }
+
+
+  footer {
+    grid-column: col / span 4;
+    grid-row: row 5;
+    width: 100%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+
+
+
+  
