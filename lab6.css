@@ -9,13 +9,10 @@ body{
     grid-template-columns: repeat(4, [col] 25% ) ;
     grid-template-rows: repeat(3, [row] auto  );
     background-color: rgb(158, 158, 158);
-    color: rgb(107, 93, 119);
     width: 100%;
   }
 
   .box {
-    background-color: rgb(78, 71, 94);
-    color: #fff;
     border-radius: 5px;
     padding: 20px;
     border-collapse: collapse;
@@ -26,12 +23,15 @@ body{
     grid-column: col 1 / span 5 ;
     grid-row: row ;
     font-family: impact;
+    background-color: rgb(40, 57, 105);
+    color: white;
   }
 
 
   nav {
     grid-column: col 1 / span 5 ;
     grid-row: row 2 ;
+    background-color: rgb(90, 40, 105);
   }
 
   /*navigation list style*/
@@ -47,6 +47,7 @@ body{
    margin: 0;
    padding: 0;
    overflow: hidden;
+   background-color: #333333;
   }
 
   nav li {
@@ -58,17 +59,25 @@ body{
   section {
     grid-column: col 1 / span 2 ;
     grid-row: row 3 ;
-    font-family: sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgb(126, 62, 112);
+    color: white;
   }
 
+/*change colors*/
   article{
     grid-column: col 1 / span 2;
     grid-row: row 4 ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: rgb(129, 239, 247);
   }
 
   aside{
     grid-column: col 3 / span 2;
     grid-row: row 3 / span 3;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: rgb(105, 221, 120);
   }
 
 
@@ -77,8 +86,29 @@ body{
     grid-row: row 5;
     width: 100%;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: rgb(36, 33, 85);
+    color: white;
   }
 
 
 
-  
+   /* unvisited link */
+a:link {
+  color: rgb(253, 239, 160);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(71, 214, 219);
+}
+
+/* mouse over link */
+ a:hover {
+  color: hotpink;
+  background-color: rgb(51, 94, 58);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
